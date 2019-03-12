@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/kellyferrone-211016/firebase', '.' ]
+images:
+- 'gcr.io/kellyferrone-211016/firebase'
