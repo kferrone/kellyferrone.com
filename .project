@@ -14,4 +14,15 @@
 	<natures>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<filteredResources>
+		<filter>
+			<id>1552435012600</id>
+			<name></name>
+			<type>22</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-.*.md.html</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>

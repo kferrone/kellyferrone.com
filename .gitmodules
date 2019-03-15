@@ -7,3 +7,6 @@
 [submodule "admin"]
 	path = admin
 	url = git@github.com:kferrone/kellyferrone.admin.git
+[submodule "wiki"]
+	path = wiki
+	url = https://github.com/kferrone/kellyferrone.com.wiki.git
