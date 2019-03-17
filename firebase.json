@@ -1,0 +1,27 @@
+{
+  "hosting": {
+    "public": "blog/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+          "source": "/contact-me",
+          "function": "sendgridEmail"
+      },
+      {
+          "source": "/sitemap.xml",
+          "function": "siteMap"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "serverless/src"
+  }
+}
