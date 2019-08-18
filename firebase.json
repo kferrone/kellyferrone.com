@@ -15,6 +15,10 @@
 				"function": "siteMap"
 			},
 			{
+				"source": "/rss.xml",
+				"function": "rssFeed"
+			},
+			{
 				"source": "**",
 				"destination": "/index.html"
 			}
