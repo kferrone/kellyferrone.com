@@ -1,12 +1,12 @@
 [submodule "blog"]
 	path = blog
-	url = git@github.com:kferrone/kellyferrone.blog.git
+	url = https://github.com/kferrone/kellyferrone.blog.git
 [submodule "serverless"]
 	path = serverless
-	url = git@github.com:kferrone/kellyferrone.serverless.git
+	url = https://github.com/kferrone/kellyferrone.serverless.git
 [submodule "admin"]
 	path = admin
-	url = git@github.com:kferrone/kellyferrone.admin.git
+	url = https://github.com/kferrone/kellyferrone.admin.git
 [submodule "wiki"]
 	path = wiki
 	url = https://github.com/kferrone/kellyferrone.com.wiki.git
