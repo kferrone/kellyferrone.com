@@ -1,27 +1,41 @@
 {
-  "hosting": {
-    "public": "blog/dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-          "source": "/contact-me",
-          "function": "sendgridEmail"
-      },
-      {
-          "source": "/sitemap.xml",
-          "function": "siteMap"
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  },
-  "functions": {
-    "source": "serverless/src"
-  }
+	"hosting": {
+		"public": "blog/dist",
+		"ignore": [
+			"firebase.json",
+			"**/.*",
+			"**/node_modules/**"
+		],
+		"rewrites": [{
+				"source": "/contact-me",
+				"function": "sendgridEmail"
+			},
+			{
+				"source": "/sitemap.xml",
+				"function": "siteMap"
+			},
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		]
+	},
+	"functions": {
+		"source": "serverless",
+		"ignore": [
+			"firebase.json",
+			"**/node_modules/**",
+			".firebaserc",
+			".editorconfig",
+			"**/.vscode/**",
+			"*.md",
+			".gitignore",
+			".gcloudignore",
+			".project",
+			".settings/**",
+			"cloudbuild.yaml",
+			"*.sh",
+			".git"
+		]
+	}
 }
