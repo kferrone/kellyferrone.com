@@ -23,10 +23,10 @@
 				"source": "/atom.xml",
 				"function": "atomFeed"
 			},
-            {
-                "source": "/blog/**",
-                "function": "blogFx"
-            },
+			{
+				"source": "/blog/**",
+				"function": "blogFx"
+			},
 			{
 				"source": "**",
 				"destination": "/index.html"
