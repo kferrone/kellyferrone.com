@@ -6,7 +6,8 @@
 			"**/.*",
 			"**/node_modules/**"
 		],
-		"rewrites": [{
+		"rewrites": [
+			{
 				"source": "/contact-me",
 				"function": "sendgridEmail"
 			},
@@ -17,6 +18,10 @@
 			{
 				"source": "/rss.xml",
 				"function": "rssFeed"
+			},
+			{
+				"source": "/atom.xml",
+				"function": "atomFeed"
 			},
 			{
 				"source": "**",
