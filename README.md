@@ -5,17 +5,47 @@ The whole website shebang. A multi layered Google app beatdown. Comprised of thr
  - [Admin Portal](https://github.com/kferrone/kellyferrone.admin)
  - [Serverless Backend](https://github.com/kferrone/kellyferrone.serverless)
 
+## Requirements  
+ - node ~v8
+ - npm ~v6
+ - firebase-tools ~v7
+
 ## Get Started  
 
-As this is a Firebase project you'll need the CLI and specifically node version 8.
+### GCloud SDK  
 
+The project is integrated with a GCP project so the GCloud tools will be useful. 
+
+[Follow this link to Get it installed](https://cloud.google.com/sdk/docs/quickstarts)
+
+then install the Firestore Emulator
+```sh
+gcloud components install cloud-firestore-emulator
+```
+
+### Firebase CLI
+
+As this is a Firebase project you'll need the [Firebase CLI](https://firebase.google.com/docs/cli)  and specifically node version 8. Firebase only supports lts releases up to v8. 
+
+note for windows: try 7.0.2 if it won't start
 ```sh
 npm install -g firebase-tools
 ```
 
-## Running  
+### Associate to Firebase Project  
 
-As long as you have [Firebase](https://firebase.google.com/docs/cli) and the front end and serverless all set up and configured correctly all you have to do is: 
+Add this snippet to the top level of this project and also to the blog and serverless projects with your project ID: 
+
+`.firebaserc`
+```json
+{
+  "projects": {
+    "default": "firebase-project-id"
+  }
+}
+```
+
+## Running  
 
 ```sh
 firebase serve
