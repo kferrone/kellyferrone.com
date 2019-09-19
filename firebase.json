@@ -24,7 +24,7 @@
 				"function": "atomFeed"
 			},
 			{
-				"source": "/blog/**",
+				"source": "/blogs/**",
 				"function": "blogFx"
 			},
 			{
