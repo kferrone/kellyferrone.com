@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  clasp:
+    image: gcr.io/$PROJECT_ID/clasp
+    build: ./clasp
+    container_name: clasp
+    hostname: clasp
+    command: 
+      - "--version"
+    environment: 
+      PROJECT_ID: ${PROJECT_ID}
+      SCRIPT_ID: ${SCRIPT_ID}
+      CLASPRC: ${CLASPRC}
