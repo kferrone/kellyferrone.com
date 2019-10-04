@@ -4,9 +4,9 @@
 [submodule "serverless"]
 	path = serverless
 	url = https://github.com/kferrone/kellyferrone.serverless.git
-[submodule "admin"]
-	path = admin
-	url = https://github.com/kferrone/kellyferrone.admin.git
 [submodule "wiki"]
 	path = wiki
 	url = https://github.com/kferrone/kellyferrone.com.wiki.git
+[submodule "admin"]
+	path = admin
+	url = https://github.com/kferrone/kellyferrone.admin.git
