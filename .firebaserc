@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "kellyferrone"
+  },
+  "targets": {
+    "kellyferrone": {
+      "hosting": {
+        "admin": [
+          "admin-kellyferrone"
+        ],
+        "public": [
+          "kellyferrone"
+        ]
+      }
+    }
   }
 }

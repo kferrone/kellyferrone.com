@@ -1,42 +1,68 @@
 {
-	"hosting": {
-		"public": "blog/dist",
-		"ignore": [
-			"firebase.json",
-			"**/.*",
-			"**/node_modules/**"
-		],
-		"rewrites": [
-			{
-				"source": "/contact-me",
-				"function": "sendgridEmail"
-			},
-			{
-				"source": "/sitemap.xml",
-				"function": "siteMap"
-			},
-			{
-				"source": "/rss.xml",
-				"function": "rssFeed"
-			},
-			{
-				"source": "/atom.xml",
-				"function": "atomFeed"
-			},
-			{
-				"source": "/meta",
-				"function": "metaFx"
-			},
-			{
-				"source": "/blog/**",
-				"function": "blogFx"
-			},
-			{
-				"source": "**",
-				"destination": "/index.html"
-			}
-		]
-	},
+	"hosting": [
+		{
+			"target": "public",
+			"public": "blog/dist/public/",
+			"ignore": [
+				"firebase.json",
+				"**/.*",
+				"**/node_modules/**"
+			],
+			"rewrites": [
+				{
+					"source": "/contact-me",
+					"function": "sendgridEmail"
+				},
+				{
+					"source": "/sitemap.xml",
+					"function": "siteMap"
+				},
+				{
+					"source": "/rss.xml",
+					"function": "rssFeed"
+				},
+				{
+					"source": "/atom.xml",
+					"function": "atomFeed"
+				},
+				{
+					"source": "/meta",
+					"function": "metaFx"
+				},
+				{
+					"source": "/blog/**",
+					"function": "blogFx"
+				},
+				{
+					"source": "**",
+					"destination": "/index.html"
+				}
+			]
+		},
+		{
+			"target": "admin",
+			"public": "blog/dist/admin/",
+			"ignore": [
+				"firebase.json",
+				"**/.*",
+				"**/node_modules/**"
+			],
+			"rewrites": [
+				{
+					"source": "/meta",
+					"function": "metaFx"
+				},
+				{
+					"source": "/blog/**",
+					"function": "blogFx"
+				},
+				{
+					"source": "**",
+					"destination": "/index.html"
+				}
+			]
+		}
+	],
 	"functions": {
 		"source": "serverless",
 		"ignore": [
@@ -54,5 +80,12 @@
 			"*.sh",
 			".git"
 		]
+	},
+	"firestore": {
+		"rules": "serverless/firestore.rules",
+		"indexes": "serverless/firestore.indexes.json"
+	},
+	"storage": {
+		"rules": "serverless/storage.rules"
 	}
 }
