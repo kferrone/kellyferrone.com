@@ -1,8 +1,8 @@
 {
 	"hosting": [
 		{
-			"target": "public",
-			"public": "blog/dist/public/",
+			"target": "blog",
+			"public": "blog/dist/",
 			"ignore": [
 				"firebase.json",
 				"**/.*",
@@ -41,7 +41,7 @@
 		},
 		{
 			"target": "admin",
-			"public": "blog/dist/admin/",
+			"public": "admin/dist/",
 			"ignore": [
 				"firebase.json",
 				"**/.*",
