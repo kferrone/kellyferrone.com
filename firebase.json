@@ -1,6 +1,5 @@
 {
-	"hosting": [
-		{
+	"hosting": [{
 			"target": "blog",
 			"public": "blog/dist/",
 			"ignore": [
@@ -8,8 +7,7 @@
 				"**/.*",
 				"**/node_modules/**"
 			],
-			"rewrites": [
-				{
+			"rewrites": [{
 					"source": "/contact-me",
 					"function": "sendgridEmail"
 				},
@@ -47,8 +45,7 @@
 				"**/.*",
 				"**/node_modules/**"
 			],
-			"rewrites": [
-				{
+			"rewrites": [{
 					"source": "/meta",
 					"function": "metaFx"
 				},
@@ -87,5 +84,10 @@
 	},
 	"storage": {
 		"rules": "serverless/storage.rules"
+	},
+	"emulators": {
+		"firestore": {
+			"port": "8082"
+		}
 	}
 }

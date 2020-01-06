@@ -3,6 +3,7 @@ node_modules
 /dist
 .firebase/
 .firebaserc
+.runtimeconfig.json
 
 # local env files
 .env.local

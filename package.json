@@ -1,0 +1,24 @@
+{
+	"name": "kellyferrone",
+	"private": true,
+	"version": "2.0.0",
+	"description": "The whole blog system.",
+	"homepage": "https://github.com/kferrone/kellyferrone.com",
+	"author": "Kelly Ferrone",
+	"license": "ISC",
+	"engines": {
+		"node": "8"
+	},
+	"bugs": {
+		"url": "https://github.com/kferrone/kellyferrone.com/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kferrone/kellyferrone.com.git"
+	},
+	"scripts": {
+		"serve": "firebase serve",
+		"firestore": "firebase emulators:start --only firestore",
+		"get:config": "firebase functions:config:get > .runtimeconfig.json"
+	}
+}
